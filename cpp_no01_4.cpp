@@ -17,7 +17,6 @@ int main()
 		else
 		{
 			cout << "이번 달 급여: "<<50 + cash * 0.12<<"만원" << endl;
-			//cash = 0;
 		}
 	}
 	return 0;
