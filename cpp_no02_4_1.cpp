@@ -14,8 +14,10 @@ int main()
 	//cout<<strcpy(str3, str2)<<endl; strcpy도 문자열 복사의 기능만 있는 함수, 값이 출력되지 x
 	strcat(str3, str1);
 	cout<<str3<<endl;
+	
 	strcat(str3, str2);
 	cout<<str3<<endl;
+	
 	strcpy(str3, str1);
 	cout<<str3<<endl;
 	
