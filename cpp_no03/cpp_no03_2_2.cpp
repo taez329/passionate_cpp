@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 class Printer
@@ -8,17 +9,11 @@ private:
 public:
 	void SetString(char *s);
 	void ShowString();
-}
+};
 
 void Printer::SetString(char *s)
 {
-	while (*s!='\0')
-	{
-		*string = *s;
-		string++;
-		s++;
-	}
-	string='\0';
+	strcpy(string, s);
 }
 
 void Printer::ShowString()
