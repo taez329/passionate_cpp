@@ -13,6 +13,7 @@ public:
 		cout<<'['<<xpos<<", "<<ypos<<']'<<endl;
 	}
 	friend Point operator~ (const Point &); //Point 클래스는 ~단항 연산자에 대해 연산자 오버로딩 되었구나!
+};
 
 Point operator~ (const Point &ref)
 {
