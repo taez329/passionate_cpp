@@ -46,11 +46,11 @@ public:
 	
 	NameCard(const NameCard& copy) : work(copy.work)
 	{
-		name=new char(strlen(copy.name)+1);
+		name=new char[strlen(copy.name)+1];
 		strcpy(name, copy.name);
-		company=new char(strlen(copy.company)+1);
+		company=new char[strlen(copy.company)+1];
 		strcpy(company, copy.company);
-		number=new char(strlen(copy.number)+1);
+		number=new char[strlen(copy.number)+1];
 		strcpy(number, copy.number);
 	} 
 	// 깊은 복사를 위한 복사 생성자의 정의
