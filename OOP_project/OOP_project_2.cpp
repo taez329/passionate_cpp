@@ -21,7 +21,7 @@ public:
 	Account(int id, char * _name, int money) //생성자
 		: account_id(id), balance(money)
 	{
-		name=new char(strlen(_name)+1);
+		name=new char[strlen(_name)+1];
 		strcpy(name, _name);
 	}
 	int GetId() { return account_id; } //객체의 id 반환
