@@ -11,7 +11,7 @@ public:
 	MyFriendInfo(char * _name, int _age)
 		: age(_age)
 	{
-		name=new char(strlen(_name)+1); // 동적할당 해줬으면 무조건 해제 해 줘 야 함
+		name=new char[strlen(_name)+1]; // 동적할당 해줬으면 무조건 해제 해 줘 야 함
 		strcpy(name, _name);
 	}
 	void ShowMyFriendInfo()
@@ -35,9 +35,9 @@ public:
 	MyFriendDetailInfo(char * _addr, char * _phone, char * _name, int _age)
 		: MyFriendInfo(_name, _age) // 상위 클래스의 생성자를 통한 초기화
 	{
-		addr=new char(strlen(_addr)+1);
+		addr=new char[strlen(_addr)+1];
 		strcpy(addr, _addr);
-		phone=new char(strlen(_phone)+1);
+		phone=new char[strlen(_phone)+1];
 		strcpy(phone, _phone);
 	}
 	void ShowMyFriendDetailInfo()
